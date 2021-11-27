@@ -48,9 +48,11 @@ body{
     background: #f8d7da;
     padding: 8px 10px;
     text-align: center;
+    word-wrap: break-word;
     border-radius: 5px;
     margin-bottom: 10px;
     border: 1px solid #f5c6cb;
+    display: none;
 }
 
 
@@ -114,6 +116,11 @@ form .name-details .field:last-child{
     top: 70%;
     transform: translateY(-50%);
     cursor: pointer;
+}
+
+.form form .field i.active::before{
+    color:#333;
+    content: "\f070";
 }
 
 .form .link{
@@ -190,6 +197,7 @@ form .name-details .field:last-child{
     position: relative;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .users .search .text{
@@ -205,6 +213,15 @@ form .name-details .field:last-child{
     font-size: 16px;
     border-radius: 5px;
     outline: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.users .search input.active{
+    opacity: 1;
+    pointer-events: auto;
+    
 }
 
 .users .search button{

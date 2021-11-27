@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title> Test Chat </title>
-        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>  
     </head>
     <body>
@@ -13,14 +13,14 @@
             <section class="form login">
                 <header> Login</header>
                 <form action="#">
-                    <div class="error-txt">Error!</div>
+                    <div class="error-txt"></div>
                         <div class="field input">
                             <label>Email</label>
-                            <input type="text" placeholder="Masukkan Email">
+                            <input type="text" name="email" placeholder="Masukkan Email">
                         </div>
                         <div class="field input">
                             <label>Password</label>
-                            <input type="text" placeholder="Masukkan Password">
+                            <input type="password" name="password" placeholder="Masukkan Password">
                             <i class="fas fa-eye"></i>
                         </div>
                         <div class="field button">
@@ -29,6 +29,8 @@
                 </form>
                 <div class="link">Belum daftar? <a href="/index.html">Daftar Sekarang!</a></div>
             </section>
-        </div>            
+        </div>
+        <script src = "javascript/pass-show-hide.js"></script>
+        <script src = "javascript/login.js"></script>         
     </body>
 </html>
